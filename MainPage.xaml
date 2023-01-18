@@ -5,7 +5,17 @@
 
     <HorizontalStackLayout>
         <Label Text="Label Content" HeightRequest="25" BackgroundColor="Red"/>
-        <Entry WidthRequest="100" HeightRequest="25" BackgroundColor="Blue"/>
+        <ContentView WidthRequest="150" HeightRequest="25" BackgroundColor="Brown">
+            <ContentView.Content>
+                <Entry Text="Entry Content" HorizontalOptions="Fill" BackgroundColor="Blue"/>
+            </ContentView.Content>
+        </ContentView>
+        <ContentView WidthRequest="150" HeightRequest="100" BackgroundColor="Brown">
+            <ContentView>
+                <Entry Text="Entry Content" BackgroundColor="Blue"/>
+            </ContentView>
+        </ContentView>
+        <Entry Text="Entry Content" WidthRequest="100" HeightRequest="25" BackgroundColor="Blue"/>
     </HorizontalStackLayout>
 
 </ContentPage>
